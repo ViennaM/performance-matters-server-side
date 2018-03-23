@@ -1,0 +1,25 @@
+{% include "partials/head.html" %}
+<main>
+
+  <ol>
+    {% for poster in posters %}
+    <li>
+      <a href="/poster/{{ poster.id }}">
+        <picture>
+          <img src="{{ poster.img }}" alt="{{ poster.title }}">
+        </picture>
+        <div>
+          <article>
+            <h1>{{ poster.title }}</h1>
+            <p>{{ poster.description }}</p>
+          </article>
+          <time datetime="">{{ poster.date }}</time>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+
+</main>
+
+{% include "partials/footer.html" %}

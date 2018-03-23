@@ -1,0 +1,19 @@
+{
+  "name": "posters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "browserify public/scripts/index.js > public/scripts/bundle.js && node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViennaM/performance-matters-server-side.git"
+  },
+  "author": "Vienna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViennaM/performance-matters-server-side/issues"
+  },
+  "homepage": "https://github.com/ViennaM/performance-matters-server-side#readme"
+}

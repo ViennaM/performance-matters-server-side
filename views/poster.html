@@ -1,0 +1,14 @@
+{% include "partials/head.html" %}
+<main>
+  <a href="/">Terug</a>
+  <h1>{{ poster.title }}</h1>
+  <article>
+    <img src="{{ poster.img }}" alt="{{ poster.title }}">
+    <p>{{ poster.description }}</p>
+    <p>{{ poster.date }}</p>
+    <p>{{ poster.subject }}</p>
+
+  </article>
+</main>
+
+{% include "partials/footer.html" %}

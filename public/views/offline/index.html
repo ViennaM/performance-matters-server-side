@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Posters van Amsterdam</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <link href="/manifest.json" rel="manifest">
 </head>
+
 <body>
-  <h1>Offline</h1>
+  <header>
+    <a href="/">
+      <img src="/images/logo.svg" alt="Logo">
+    </a>
+    <nav>
+      <ul>
+        <li>
+          <a href="/" class="active">Posters</a>
+        </li>
+        <li>
+          <a href="#favorieten">Favorieten</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+  <a href="/">Terug</a>
+  <h1>Poster niet gevonden...</h1>
+</main>
+
+<script src="/scripts/bundle.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+  }
+</script>
 </body>
 </html>

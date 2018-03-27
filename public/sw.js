@@ -4,8 +4,11 @@ self.addEventListener('install', event => event.waitUntil(
     '/views/offline/',
     '/styles/main.css',
     '/scripts/bundle.js',
-    '/manifest.json',
     '/images/logo.svg'
+  ])),
+  caches.open('v1-pages')
+  .then(cache => cache.addAll([
+    '/'
   ]))
   .then(self.skipWaiting())
 ));

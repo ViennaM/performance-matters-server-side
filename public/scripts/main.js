@@ -12,6 +12,15 @@ module.exports = {
 
 
       var main = document.querySelector('main')
+      
+      if (!navigator.onLine) {
+        var message = '<p>Je bent offline... Deze pagina is waarschijnlijk niet up to date.</p>'
+        console.log('offline')
+        main.insertAdjacentHTML('afterbegin', message)
+      } else {
+        console.log('online')
+      }
+
       main.insertAdjacentHTML('beforeend', loader)
 
       var images = document.querySelectorAll('ol li picture img')

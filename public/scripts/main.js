@@ -1,5 +1,5 @@
 module.exports = {
-  kaas: function () {
+  init: function () {
     var posters = document.querySelectorAll('ol li')
 
     if (posters) {
@@ -21,7 +21,7 @@ module.exports = {
         objImg.src = images[i].src
         objImg.onload = function () {
           count++
-          if (count > 34) {
+          if (count > 7) {
             for (var i = 0; i < posters.length; i++) {
               posters[i].style.animationDelay = `${i * 100}ms`
               posters[i].style.display = 'block'
@@ -30,11 +30,6 @@ module.exports = {
           }
         }
       }
-    }
-    var back = document.querySelector('main > a')
-    if (back) {
-      document.querySelector('.loader').style.display = 'none'
-      back.href = 'javascript:history.back()'
     }
   }
 }

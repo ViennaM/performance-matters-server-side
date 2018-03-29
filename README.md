@@ -1,5 +1,16 @@
 # Posters van Amsterdam server side
 ![Demo screenshot](images/screenshot.png)
+- [Posters van Amsterdam server side](#posters-van-amsterdam-server-side)
+  * [Installatie](#installatie)
+  * [Optimalisatie](#optimalisatie)
+    + [Audit 1: Eindpunt client side SPA](#audit-1--eindpunt-client-side-spa)
+    + [Audit 2: Startpunt server side SPA](#audit-2--startpunt-server-side-spa)
+    + [Audit 3: Critical CSS](#audit-3--critical-css)
+    + [Audit 4: Minify & Gzip](#audit-4--minify---gzip)
+      - [Minify](#minify)
+      - [Gzip](#gzip)
+  * [Conclusie](#conclusie)
+  * [To do](#to-do)
 
 De client side versie van de Posters app heb ik omgezet naar een server side versie. De core functionaliteit van de app is om posters uit de geschiedenis van Amsterdam op te halen via Adamnet en hier details van te bekijken. Dit heb ik met Node.js opgelost.
 
@@ -82,3 +93,5 @@ Javascript en CSS heb ik vervolgens laten compressen met Gzip. Javascript is 1KB
 - [ ] Dialog openen per poster
 - [ ] Filter functies overnemen uit client side versie
 
+## License 
+MIT License

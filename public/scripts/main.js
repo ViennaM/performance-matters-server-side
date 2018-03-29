@@ -32,7 +32,7 @@ module.exports = {
           count++
           if (count > 7) {
             for (var i = 0; i < posters.length; i++) {
-              posters[i].style.animationDelay = `${i * 100}ms`
+              posters[i].style.animationDelay = i*100 + 'ms'
               posters[i].style.display = 'block'
             }
             document.querySelector('.loader').style.display = 'none'

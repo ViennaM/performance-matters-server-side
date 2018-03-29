@@ -2,7 +2,9 @@ var express = require('express')
 var app = express()
 var request = require('request')
 var nunjucks = require('nunjucks')
+var compression = require('compression')
 
+app.use(compression())
 app.use(express.static('public'))
 
 nunjucks.configure('public/views', {

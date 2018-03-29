@@ -7,9 +7,7 @@ self.addEventListener('install', event => event.waitUntil(
     '/images/logo.svg'
   ])),
   caches.open('v1-pages')
-  .then(cache => cache.addAll([
-    '/'
-  ]))
+  .then(cache => cache.add('/'))
   .then(self.skipWaiting())
 ));
 

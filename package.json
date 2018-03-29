@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "browserify public/scripts/index.js > public/scripts/bundle.js && node app.js"
+    "uglify": "browserify public/scripts/index.js | uglifyjs > public/scripts/bundle.js && uglifycss public/styles/main.css > public/styles/min.css",
+    "start": "npm run uglify && node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/ViennaM/performance-matters-server-side/issues"
   },
-  "homepage": "https://github.com/ViennaM/performance-matters-server-side#readme"
+  "homepage": "https://github.com/ViennaM/performance-matters-server-side#readme",
+  "dependencies": {
+    "compression": "^1.7.2",
+    "express": "^4.16.3",
+    "flickity": "^2.1.0",
+    "minify": "^3.0.5",
+    "nunjucks": "^3.1.2",
+    "request": "^2.85.0",
+    "uglifycss": "0.0.29"
+  }
+
 }

@@ -73,8 +73,8 @@ app.get('/poster/:id', function (req, res) {
   })
 })
 
-app.listen(8000, function () {
+app.listen(5000, function () {
   api.getData()
-  console.log('server is running on port 8000')
+  console.log('server is running on port 5000')
 
 })
